@@ -12,7 +12,8 @@ ENV VARNISHD_PARAMS   -p default_ttl=3600 -p default_grace=3600
 # Retrieve from
 # https://packagecloud.io/varnishcache/varnish5/packages/debian/stretch/varnish_5.2.0-1~stretch_amd64.deb
 RUN apt-get update \
-    && apt-get install -y wget libjemalloc1 libncurses5 gcc libc6-dev libc6.1-dev-alpha-cross libc-dev \
+    && apt-get install -y wget libjemalloc1 libncurses5 gcc libc6-dev \
+                          libc6.1-dev-alpha-cross libc-dev libedit2 libbsd0 \
     && wget --content-disposition https://packagecloud.io/varnishcache/varnish5/packages/debian/stretch/varnish_5.2.0-1~stretch_amd64.deb/download.deb \
     && dpkg -i varnish_5.2.0-1~stretch_amd64.deb \
     && rm -rf /var/lib/apt/lists/* \
