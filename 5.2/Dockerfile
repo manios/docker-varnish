@@ -9,7 +9,9 @@ ENV VCL_CONFIG        /etc/varnish/default.vcl
 ENV CACHE_SIZE        64m
 ENV VARNISHD_PARAMS   -p default_ttl=3600 -p default_grace=3600
 
-# Retrieve from
+COPY start.sh /usr/bin/start-varnish
+
+# Retrieve Varnish from
 # https://packagecloud.io/varnishcache/varnish5/packages/debian/stretch/varnish_5.2.0-1~stretch_amd64.deb
 RUN apt-get update \
     && apt-get install -y wget libjemalloc1 libncurses5 gcc libc6-dev \
@@ -19,9 +21,8 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && rm -f varnish_5.2.0-1~stretch_amd64.deb \
     && mkdir -p "/orig/conf" \
-    && cp -p "/etc/varnish/default.vcl" /orig/conf
-
-COPY start.sh /usr/local/bin/start-varnish
+    && cp -p "/etc/varnish/default.vcl" /orig/conf \
+    && chmod 755 /usr/bin/start-varnish
 
 CMD ["start-varnish"]
 
