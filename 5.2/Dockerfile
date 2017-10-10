@@ -21,9 +21,10 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && rm -f varnish_5.2.0-1~stretch_amd64.deb \
     && mkdir -p "/orig/conf" \
-    && cp -p "/etc/varnish/default.vcl" /orig/conf \
-    && chmod 755 /usr/bin/start-varnish
+    && cp -Rp /etc/varnish/* /orig/conf \
+    && chmod 755 /usr/bin/start-varnish \
+    && update-rc.d -f varnish remove
 
 CMD ["start-varnish"]
 
-EXPOSE 80
+EXPOSE 6081

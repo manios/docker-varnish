@@ -17,5 +17,8 @@ script:
 
 after_script:
   - docker images
+  - docker run -d --name myvarnish -p 6081:6081 manios/varnish:5.2
+  - sleep 5 && nc -zv localhost 6081
+  - docker rm -f myvarnish
 
 # vim:set et ts=2 sw=2:
