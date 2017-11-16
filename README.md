@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-* `5.2.0`, `5.2`, `latest` [(5.2.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/master/Dockerfile)
+* `5.2.1`, `5.2`, `latest` [(5.2.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/master/Dockerfile)
 
 [![](https://images.microbadger.com/badges/image/manios/varnish.svg)](http://microbadger.com/images/manios/varnish)  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches)
 
@@ -27,7 +27,7 @@ docker logs -f --tail 200 some-varnish
 The expected output may look like the following:
 ```
 /etc/varnish is not empty. We are ok to go.
-varnishd (varnish-5.2.0 revision 4c4875cbf)
+varnishd (varnish-5.2.1 revision 4c4875cbf)
 Copyright (c) 2006 Verdens Gang AS
 Copyright (c) 2006-2015 Varnish Software AS
 Debug: Platform: Linux,3.13.0-132-generic,x86_64,-junix,-smalloc,-smalloc,-hcritbit
