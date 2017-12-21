@@ -2,13 +2,13 @@
 
 * `5.2.1`, `5.2`, `latest` [(5.2.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/master/Dockerfile)
 
-[![](https://images.microbadger.com/badges/image/manios/varnish.svg)](http://microbadger.com/images/manios/varnish)  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches)
+[![](https://images.microbadger.com/badges/image/manios/varnish.svg)](https://microbadger.com/images/manios/varnish)  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches)
 
 # What is Varnish?
 
-Varnish Cache is a web application accelerator also known as a caching HTTP reverse proxy. You install it in front of any server that speaks HTTP and configure it to cache the contents. Varnish Cache is really, really fast. It typically speeds up delivery with a factor of 300 - 1000x, depending on your architecture. A high level overview of what Varnish does can be seen in this [video](https://www.youtube.com/watch?v=fGD14ChpcL4). More information: Varnish [official page](http://varnish-cache.org/intro/index.html#intro).
+Varnish Cache is a web application accelerator also known as a caching HTTP reverse proxy. You install it in front of any server that speaks HTTP and configure it to cache the contents. Varnish Cache is really, really fast. It typically speeds up delivery with a factor of 300 - 1000x, depending on your architecture. A high level overview of what Varnish does can be seen in this [video](https://www.youtube.com/watch?v=fGD14ChpcL4). More information: Varnish [official page](https://varnish-cache.org/intro/index.html#intro).
 
-![Varnish logo](http://varnish-cache.org/_static/varnish-bunny.png)
+![Varnish logo](https://varnish-cache.org/_static/varnish-bunny.png)
 
 # How to use this image
 
