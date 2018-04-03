@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-* `5.2.1`, `5.2`, `latest` [(5.2.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/master/Dockerfile)
+* `6.0.0`, `6.0`, `latest` [(5.2.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.0.0/Dockerfile)
+* `5.2.1`, `5.2` [(5.2.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v5.2.1/5.2/Dockerfile)
 
 [![](https://images.microbadger.com/badges/image/manios/varnish.svg)](https://microbadger.com/images/manios/varnish)  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches)
 
