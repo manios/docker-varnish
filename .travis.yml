@@ -9,7 +9,7 @@ install:
 
 before_script:
   - env | sort
-  - git checkout -b v${VERSION} v${VERSION}
+  - git checkout v${VERSION} -b v${VERSION}
   - image="varnish:$VERSION"
 
 script:
