@@ -28,10 +28,11 @@ docker logs -f --tail 200 some-varnish
 The expected output may look like the following:
 ```
 /etc/varnish is not empty. We are ok to go.
-varnishd (varnish-5.2.1 revision 67e562482)
+varnishd (varnish-6.0.1 revision 8d54bec5330c29304979ebf2c425ae14ab80493c)
 Copyright (c) 2006 Verdens Gang AS
 Copyright (c) 2006-2015 Varnish Software AS
-Debug: Platform: Linux,3.13.0-132-generic,x86_64,-junix,-smalloc,-smalloc,-hcritbit
+Debug: Version: varnish-6.0.1 revision 8d54bec5330c29304979ebf2c425ae14ab80493c
+Debug: Platform: Linux,4.4.0-96-generic,x86_64,-junix,-smalloc,-sdefault,-hcritbit
 Debug: Child (20) Started
 Info: Child (20) said Child starts
 ```
