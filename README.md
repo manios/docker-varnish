@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-* `6.0.1`, `6.0`, `latest` [(6.0.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.0.1/Dockerfile)
+* `6.1.0`, `6.1`, `latest` [(6.1.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.1.0/Dockerfile)
 * `5.2.1`, `5.2` [(5.2.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v5.2.1/5.2/Dockerfile)
 
 [![](https://images.microbadger.com/badges/image/manios/varnish.svg)](https://microbadger.com/images/manios/varnish)  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches)
@@ -28,14 +28,19 @@ docker logs -f --tail 200 some-varnish
 The expected output may look like the following:
 ```
 /etc/varnish is not empty. We are ok to go.
-varnishd (varnish-6.0.1 revision 8d54bec5330c29304979ebf2c425ae14ab80493c)
+/etc/varnish/secret file does not exist. Creating a new one.
+0+1 records in
+0+1 records out
+116 bytes copied, 0.0005568 s, 208 kB/s
+/etc/varnish/secret successfully created!
+varnishd (varnish-6.1.0 revision 4684c38ecfc194b4f3b5b81594832dbb197a3bb9)
 Copyright (c) 2006 Verdens Gang AS
 Copyright (c) 2006-2015 Varnish Software AS
-Debug: Version: varnish-6.0.1 revision 8d54bec5330c29304979ebf2c425ae14ab80493c
+Debug: Version: varnish-6.1.0 revision 4684c38ecfc194b4f3b5b81594832dbb197a3bb9
 Debug: Platform: Linux,4.4.0-96-generic,x86_64,-junix,-smalloc,-sdefault,-hcritbit
-Debug: Child (20) Started
-Info: Child (20) said Child starts
+Debug: Child (21) Started
 ```
+
 ## Override default configuration
 
 Varnish configuration is stored by default to ```/etc/varnish/default.vcl``` file. 
