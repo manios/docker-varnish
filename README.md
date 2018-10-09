@@ -3,7 +3,7 @@
 * `6.1.0`, `6.1`, `latest` [(6.1.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.1.0/Dockerfile)
 * `5.2.1`, `5.2` [(5.2.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v5.2.1/5.2/Dockerfile)
 
-[![](https://images.microbadger.com/badges/image/manios/varnish.svg)](https://microbadger.com/images/manios/varnish)  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches)
+ [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches) [![](https://images.microbadger.com/badges/image/manios/varnish.svg)](https://microbadger.com/images/manios/varnish) [![Docker pulls badge](https://img.shields.io/docker/pulls/manios/varnish.svg)]  [![Docker stars badge](https://img.shields.io/docker/stars/manios/varnish.svg)]
 
 # What is Varnish?
 
