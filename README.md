@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-* `6.1.0`, `6.1`, `latest` [(6.1.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.1.0/Dockerfile)
+* `6.1.1`, `6.1`, `latest` [(6.1.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.1.1/Dockerfile)
 * `5.2.1`, `5.2` [(5.2.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v5.2.1/5.2/Dockerfile)
 
  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches) [![](https://images.microbadger.com/badges/image/manios/varnish.svg)](https://microbadger.com/images/manios/varnish) [![Docker pulls badge](https://img.shields.io/docker/pulls/manios/varnish.svg)](https://hub.docker.com/r/manios/varnish)  [![Docker stars badge](https://img.shields.io/docker/stars/manios/varnish.svg)](https://hub.docker.com/r/manios/varnish)
@@ -31,14 +31,15 @@ The expected output may look like the following:
 /etc/varnish/secret file does not exist. Creating a new one.
 0+1 records in
 0+1 records out
-116 bytes copied, 0.0005568 s, 208 kB/s
+115 bytes copied, 0.00587433 s, 19.6 kB/s
 /etc/varnish/secret successfully created!
-varnishd (varnish-6.1.0 revision 4684c38ecfc194b4f3b5b81594832dbb197a3bb9)
+varnishd (varnish-6.1.1 revision efc2f6c1536cf2272e471f5cff5f145239b19460)
 Copyright (c) 2006 Verdens Gang AS
 Copyright (c) 2006-2015 Varnish Software AS
-Debug: Version: varnish-6.1.0 revision 4684c38ecfc194b4f3b5b81594832dbb197a3bb9
+Debug: Version: varnish-6.1.1 revision efc2f6c1536cf2272e471f5cff5f145239b19460
 Debug: Platform: Linux,4.4.0-96-generic,x86_64,-junix,-smalloc,-sdefault,-hcritbit
-Debug: Child (21) Started
+Debug: Child (22) Started
+Info: Child (22) said Child starts
 ```
 
 ## Override default configuration
@@ -67,12 +68,12 @@ You can either use docker volumes or a custom Dockerfile to override default con
   ```
   Then run:
   ```
-  docker build -t myvarnish:5.2 . \
+  docker build -t myvarnish:6.1 . \
   && docker run -d \
       --name some-varnish \
       -e VCL_CONFIG=/mydir/myconf.vcl \
       -p 6081:6081 \
-      myvarnish:5.2
+      myvarnish:6.1
   ```
 
 ## Environmental variables
@@ -84,7 +85,7 @@ You can configure Varnish daemon by overriding the following environmental varia
 * CACHE_SIZE
    * Default value: `64m`  (64 megabytes)
 * VARNISHD_PARAMS : 
-   * Default value: `-p default_ttl=3600 -p default_grace=3600` For all available values you can instruct official ```varnishd``` [parameters documentation](https://varnish-cache.org/docs/5.2/reference/varnishd.html#list-of-parameters).
+   * Default value: `-p default_ttl=3600 -p default_grace=3600` For all available values you can instruct official ```varnishd``` [parameters documentation](https://varnish-cache.org/docs/6.1/reference/varnishd.html#list-of-parameters).
 
 For example, providing we want to have a container with:
 * Configuration file: ```/opt/manios.vcl```
@@ -104,14 +105,14 @@ we will run the command:
   ```
 ## Get Statistics
 
-You can display statistics from the running container ```varnishd``` instance using ```varnishstat``` utility command. For all available options you can refer to the [official documentation](https://varnish-cache.org/docs/5.2/reference/varnishstat.html).
+You can display statistics from the running container ```varnishd``` instance using ```varnishstat``` utility command. For all available options you can refer to the [official documentation](https://varnish-cache.org/docs/6.1/reference/varnishstat.html).
 ```
 docker exec -it some-varnish varnishstat
 ```
 
 ## See live Varnish Logs
 
-You can display live logs from the running container ```varnishd``` instance using ```varnishlog``` utility command. For all available options you can refer to the [official documentation](https://varnish-cache.org/docs/5.2/reference/varnishlog.html).
+You can display live logs from the running container ```varnishd``` instance using ```varnishlog``` utility command. For all available options you can refer to the [official documentation](https://varnish-cache.org/docs/6.1/reference/varnishlog.html).
 
 ```
 docker exec -it myvarnish varnishlog
