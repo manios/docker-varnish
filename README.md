@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-* `6.1.1`, `6.1`, `latest` [(6.1.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.1.1/Dockerfile)
+* `6.2.0`, `6.2`, `latest` [(6.2.0/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.2.0/Dockerfile)
 * `5.2.1`, `5.2` [(5.2.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v5.2.1/5.2/Dockerfile)
 
  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches) [![](https://images.microbadger.com/badges/image/manios/varnish.svg)](https://microbadger.com/images/manios/varnish) [![Docker pulls badge](https://img.shields.io/docker/pulls/manios/varnish.svg)](https://hub.docker.com/r/manios/varnish)  [![Docker stars badge](https://img.shields.io/docker/stars/manios/varnish.svg)](https://hub.docker.com/r/manios/varnish)
@@ -31,15 +31,15 @@ The expected output may look like the following:
 /etc/varnish/secret file does not exist. Creating a new one.
 0+1 records in
 0+1 records out
-115 bytes copied, 0.00587433 s, 19.6 kB/s
+104 bytes copied, 0.000431003 s, 241 kB/s
 /etc/varnish/secret successfully created!
-varnishd (varnish-6.1.1 revision efc2f6c1536cf2272e471f5cff5f145239b19460)
+varnishd (varnish-6.2.0 revision b14a3d38dbe918ad50d3838b11aa596f42179b54)
 Copyright (c) 2006 Verdens Gang AS
-Copyright (c) 2006-2015 Varnish Software AS
-Debug: Version: varnish-6.1.1 revision efc2f6c1536cf2272e471f5cff5f145239b19460
-Debug: Platform: Linux,4.4.0-96-generic,x86_64,-junix,-smalloc,-sdefault,-hcritbit
-Debug: Child (22) Started
-Info: Child (22) said Child starts
+Copyright (c) 2006-2019 Varnish Software AS
+Debug: Version: varnish-6.2.0 revision b14a3d38dbe918ad50d3838b11aa596f42179b54
+Debug: Platform: Linux,4.4.0-143-generic,x86_64,-junix,-smalloc,-sdefault,-hcritbit
+Debug: Child (20) Started
+Info: Child (20) said Child starts
 ```
 
 ## Override default configuration
