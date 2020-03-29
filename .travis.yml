@@ -2,14 +2,14 @@ language: bash
 services: docker
 
 env:
-  - VERSION=6.3.1
+  - VERSION=6.3.2
   
 install:
   - git clone https://github.com/manios/docker-varnish.git
 
 before_script:
   - env | sort
-  - git checkout v${VERSION} -b v${VERSION}
+  # - git checkout v${VERSION} -b v${VERSION}
   - image="varnish:$VERSION"
 
 script:
@@ -17,7 +17,7 @@ script:
 
 after_script:
   - docker images
-  - docker run -d --name myvarnish -p 6081:6081 manios/varnish:"$VERSION"
+  - docker run -d --name myvarnish -p 6081:6081 varnish:"$VERSION"
   - sleep 5 && nc -zv localhost 6081
   - docker rm -f myvarnish
 

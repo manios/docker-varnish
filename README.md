@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-* `6.3.1`, `6.3`, `latest` [(6.3.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.3.1/Dockerfile)
+* `6.3.2`, `6.3`, `latest` [(6.3.2/Dockerfile)](https://github.com/manios/docker-varnish/blob/v6.3.1/Dockerfile)
 * `5.2.1`, `5.2` [(5.2.1/Dockerfile)](https://github.com/manios/docker-varnish/blob/v5.2.1/5.2/Dockerfile)
 
  [![build status badge](https://img.shields.io/travis/manios/docker-varnish/master.svg)](https://travis-ci.org/manios/docker-varnish/branches) [![](https://images.microbadger.com/badges/image/manios/varnish.svg)](https://microbadger.com/images/manios/varnish) [![Docker pulls badge](https://img.shields.io/docker/pulls/manios/varnish.svg)](https://hub.docker.com/r/manios/varnish)  [![Docker stars badge](https://img.shields.io/docker/stars/manios/varnish.svg)](https://hub.docker.com/r/manios/varnish)
@@ -33,10 +33,10 @@ The expected output may look like the following:
 0+1 records out
 104 bytes copied, 0.000431003 s, 241 kB/s
 /etc/varnish/secret successfully created!
-varnishd (varnish-6.3.1 revision 6e96ff048692235e64565211a38c41432a26c055)
+varnishd (varnish-6.3.2 revision 6870fd661a2b42c2e8adad838b5d92a71f27dccd)
 Copyright (c) 2006 Verdens Gang AS
 Copyright (c) 2006-2019 Varnish Software AS
-Debug: Version: varnish-6.3.1 revision 6e96ff048692235e64565211a38c41432a26c055
+Debug: Version: varnish-6.3.2 revision 6870fd661a2b42c2e8adad838b5d92a71f27dccd
 Debug: Platform: Linux,4.4.0-166-generic,x86_64,-junix,-smalloc,-sdefault,-hcritbit
 Debug: Child (20) Started
 Info: Child (20) said Child starts
