@@ -2,7 +2,7 @@ language: bash
 services: docker
 
 env:
-  - VERSION=6.3.2
+  - VERSION=6.4.0
   
 install:
   - git clone https://github.com/manios/docker-varnish.git

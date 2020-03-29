@@ -1,19 +1,19 @@
 FROM debian:stretch-slim
 
 LABEL name="Varnish Cache" \
-      version="6.3.2" \
+      version="6.4.0" \
       homepage="http://varnish-cache.org/" \
       maintainer="Christos Manios <maniopaido@gmail.com>"
 
 ENV VCL_CONFIG        /etc/varnish/default.vcl
 ENV CACHE_SIZE        64m
 ENV VARNISHD_PARAMS   -p default_ttl=3600 -p default_grace=3600
-ENV VARNISH_VERSION   6.3.2
+ENV VARNISH_VERSION   6.4.0
 COPY start.sh /usr/bin/start-varnish
 
 # Retrieve Varnish from
-#https://packagecloud.io/varnishcache/varnish63/packages/debian/stretch/varnish_6.3.2-1~stretch_amd64.deb/download.deb
-RUN VARNISH_URL_VERSION="63" \
+#https://packagecloud.io/varnishcache/varnish64/packages/debian/stretch/varnish_6.4.0-1~stretch_amd64.deb/download.deb
+RUN VARNISH_URL_VERSION="64" \
     && apt-get update \
     && apt-get install -y wget libjemalloc1 libncurses5 gcc libc6-dev \
                           libc6.1-dev-alpha-cross libc-dev libedit2 libbsd0 \
